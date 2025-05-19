@@ -13,10 +13,10 @@
     <!-- 浏览器标签上显示的图标 -->
     <link rel="icon" type="image/ico" href="./favicon.ico">
     <!-- 样式文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
     <link rel="stylesheet" href="./static/style.css?v=1.2.0">
-    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
 
     <!-- 自定义设置 -->
     <style>
@@ -34,6 +34,11 @@
             /* 背景视频，none: 不显示 unset 显示 */
             display: none;
         }
+
+        .card {
+            /* 卡片背景颜色 */
+            background-color: rgba(255, 255, 255, 0.6);
+        }
     </style>
     <script>
         // 音乐设置
@@ -44,9 +49,9 @@
         let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
         let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
         let music_fixed = false; // 吸底模式
-        let music_volume = 0.6; // 默认音量
+        let music_volume = 0.2; // 默认音量
         let music_autoplay = false; // 自动播放
-        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        let music_loop = "one"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
     </script>
     <!-- end 自定义设置 -->
 </head>
@@ -66,7 +71,7 @@
                 </p>
                 <p>Per aspera ad astra</p>
                 <p style="color: transparent;">
-                    I`m PhotonSPK. An ADHD/BPD-II/ patient.
+                    I`m PhotonSPK, doppelgänger of Akula. An ADHD/BPD-II patient.
                     <br>
                     Mentally unstable and not deserved to be saved.
  		            <br>
@@ -105,12 +110,12 @@
                     </ul>
                 -->
                 <footer>
-                    <p>Copyright 2024 <a href="https://github.com/PhotonSPK" target="_blank">AkulaQWQ</a>
+                    <p>Copyright 2024 <a href="https://github.com/AkulaQWQ" target="_blank">AkulaQWQ</a>
                         <a href="https://icp.gov.moe/?keyword=20247400" target="_blank">萌ICP备20247400号</a>
                         <br>
                         <a href="https://github.com/kaygb/KZHomePage" target="_blank" rel="">KZHomePage</a>
                         Modified by
-                        <a href="https://github.com/PhotonSPK" target="_blank" rel="">AkulaQWQ</a>
+                        <a href="https://github.com/AkulaQWQ" target="_blank" rel="">AkulaQWQ</a>
                     </p>
                 </footer>
             </div>
@@ -120,13 +125,13 @@
 
     <!-- aplayer -->
     <div id="aplayer-fixed" class="aplayer"></div>
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
-    <script src="./static/Meting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js"></script>
     <!-- end_aplayer -->
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/layer/3.5.1/layer.min.js"></script>
 
     <script src="./static/main.js"></script>
 
